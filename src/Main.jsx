@@ -82,11 +82,11 @@ export const Main = () => {
             {(imagesURLs.length) ? (
                 <StyledContainer>
                 <Row>
-                    <Col className="p-3">
+                    <Col className="p-3 text-center">
                     {imagesURLs.map(img => {
                         return(
                             
-                                <img className="m-1" width="400px" src={img} />
+                                <img className="m-1" width="30%" src={img} />
 
                         )
                     })}

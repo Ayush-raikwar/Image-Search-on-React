@@ -35,13 +35,14 @@ export const Main = () => {
     const [imagesURLs, setImagesURLs] = useState([])
     const [imageQuery, setImageQuery] = useState('')
     const getImages = () => {
-        
+        setImagesURLs([])
         const res = fetch(`https://pixabay.com/api/?key=${API_KEY}&q=${imageQuery}`)
         .then(response => response.json())
         .then(res =>{
             console.log(res.hits[0].webformatURL);
             res.hits.forEach(val => {
                 // console.log(val)
+                
                 setImagesURLs((prev)=> [...prev, val.webformatURL])
             })
         })
@@ -51,13 +52,13 @@ export const Main = () => {
    
     return(
         <>
-             <Navbar bg="dark" variant="dark" className="m-0">
+             <Navbar bg="dark" variant="dark" className="">
                 <Container>
                 <Navbar.Brand href="#home">BDI Plus Image Seacrh project by Ayush Raikwar</Navbar.Brand>
                 </Container>
             </Navbar>
             <br />
-            <StyledTooltip>
+            <StyledTooltip className="my-5">
             {['right'].map((placement) => (
                 <OverlayTrigger
                 key={placement}

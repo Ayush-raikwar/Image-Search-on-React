@@ -88,7 +88,7 @@ export const Main = () => {
                     {imagesURLs.map(img => {
                         return(
                             
-                                <img className="m-1" width="30%" src={img} alt="Cool guy Images.jpeg lol" />
+                                <img className="m-1" width="30%" src={img} />
 
                         )
                     })}

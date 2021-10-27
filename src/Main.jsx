@@ -46,6 +46,7 @@ export const Main = () => {
                 setImagesURLs((prev)=> [...prev, val.webformatURL])
             })
         })
+        console.log(res);
         console.log(imagesURLs, 'hi');
         
     }
@@ -87,7 +88,7 @@ export const Main = () => {
                     {imagesURLs.map(img => {
                         return(
                             
-                                <img className="m-1" width="30%" src={img} />
+                                <img className="m-1" width="30%" src={img} alt="Cool guy Images.jpeg lol" />
 
                         )
                     })}

@@ -5,8 +5,6 @@ import Col from 'react-bootstrap/Col'
 import {Button, Navbar} from 'react-bootstrap'
 import { API_KEY } from './api_key'
 import styled from 'styled-components'
-import Tooltip from 'react-bootstrap/Tooltip'
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
 const StyledContainer = styled(Container)`
     background-color: rgb(0,0,0,0.08);
@@ -71,10 +69,7 @@ const StyledInput = styled.input`
     width:50%;
     border-radius:2rem;
 `
-const StyledTooltip = styled.div`
-    width:100%;
-    text-align:center;
-`
+
 const StyledNavbarBrand = styled(Navbar.Brand)`
     font-size:2.5rem;    
     font-family: 'Fleur De Leah', cursive;
@@ -106,6 +101,7 @@ export const Main = () => {
                 setImagesURLs(prev => [...prev, val.webformatURL])
             })
         })
+        console.log(demoImgs);
     },[])
 
 

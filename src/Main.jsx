@@ -130,7 +130,7 @@ export const Main = () => {
         <>
              <Navbar bg="dark" variant="dark" className="">
                 <Container>
-                    <StyledNavbarBrand href="#home">Image library by Ayush</StyledNavbarBrand>
+                    <StyledNavbarBrand href="#home">Image library</StyledNavbarBrand>
                 </Container>
             </Navbar>
             <br />
